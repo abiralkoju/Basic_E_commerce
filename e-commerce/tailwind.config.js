@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        lato: ["Prociono", "serif"],
+      },
+      boxShadow: {
+        custom: "0 0 5px rgba(0,0,0,0.3)",
+      },
+    },
   },
   plugins: [],
 };
