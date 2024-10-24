@@ -9,6 +9,9 @@ export default {
       boxShadow: {
         custom: "0 0 5px rgba(0,0,0,0.3)",
       },
+      outline: {
+        outline: "",
+      },
     },
   },
   plugins: [],
