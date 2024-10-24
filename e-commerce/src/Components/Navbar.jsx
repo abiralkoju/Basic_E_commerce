@@ -13,10 +13,10 @@ const Navbar = () => {
 
   return (
     <nav className="w-[100vw] shadow-custom ">
-      <div className="header h-[5rem] mx-[4rem] flex items-center justify-between">
+      <div className="header h-[5rem] mx-[2rem] md:mx-[4rem] flex items-center justify-between">
         {/* hamburger menu */}
         <button onClick={handleisOpen} className="md:hidden">
-          <GiHamburgerMenu />
+          <GiHamburgerMenu className="text-xl " />
         </button>
 
         <Link
@@ -62,19 +62,19 @@ const Navbar = () => {
             <div className="absolute top-0 left-0 bottom-0 right-[50%] bg-white flex flex-col items-center space-y-2 z-50 py-[4rem]">
               <button
                 onClick={handleisOpen}
-                className="absolute top-4 left-4 text-3xl font-semibold"
+                className="absolute top-4 left-6 text-4xl font-semibold"
               >
                 &times;
               </button>
               <Link
                 to="/"
-                className="block text-gray-800 font-semibold text-lg hover:text-orange-600 hover:custom-outline"
+                className="block text-gray-800 font-semibold text-lg hover:text-orange-600 hover:outline hover:outline-2 hover:outline-orange-500 rounded px-5 py-2"
               >
                 Home
               </Link>
               <Link
                 to="/search"
-                className="block text-gray-800 font-semibold text-lg hover:text-orange-600"
+                className="block text-gray-800 font-semibold text-lg hover:text-orange-600 hover:outline hover:outline-2 hover:outline-orange-500 rounded px-5 py-2"
               >
                 Search
               </Link>
