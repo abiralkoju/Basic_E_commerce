@@ -28,20 +28,13 @@ const Navbar = () => {
 
         {/* desktop links */}
         <div className="hidden md:flex space-x-10 font-semibold text-md text-gray-500 -ml-[18rem] h-full flex">
-          <div className="relative group h-full flex items-center">
-            <Link to="/" className="border-3 hover:border-orange-500">
-              Home
-            </Link>
+          <div className="relative group h-full flex items-center cursor-pointer">
+            <Link to="/">Home</Link>
             <span className="absolute left-0 right-0 bottom-0 h-1 bg-orange-500 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
           </div>
 
-          <div className="relative group h-full flex items-center">
-            <Link
-              to="/search"
-              className="hover:border-3 hover:border-orange-500"
-            >
-              Search
-            </Link>
+          <div className="relative group h-full flex items-center cursor-pointer">
+            <Link to="/search">Search</Link>
             <span className="absolute left-0 right-0 bottom-0 h-1 bg-orange-500 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
           </div>
         </div>
